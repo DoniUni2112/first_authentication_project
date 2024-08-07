@@ -1,0 +1,13 @@
+<div class="detail-container">
+  <img src="{{ detailProduct?.imageUrl }}" alt="" />
+  <h1>{{ detailProduct?.name }}</h1>
+  <h2>{{ detailProduct?.price }}₫</h2>
+  <p>Currently in stock: {{ detailProduct?.inStock }}</p>
+  <p>{{ detailProduct?.description }}</p>
+  <button
+    class="button-40"
+    (click)="this.storeService.addToCart(detailProduct)"
+  >
+    Add to cart
+  </button>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="navbar-content">
+    @if (authService.currentUser) {
+      <img [src]="authService.currentUser.photoURL" alt="" />
+    }
+    <div>
+      <a [routerLink]="['/home']">Home</a>
+      <a [routerLink]="['/products']">Our roduct</a>
+    </div>
+    <div class="navbar-button">
+      <button class="button-27" (click)="authService.login()">
+        Sign in with google
+      </button>
+    </div>
+    <!--  <button class="button-27" (click)="authService.logout()">Đăng xuất</button>-->
+  </div>
+</div>

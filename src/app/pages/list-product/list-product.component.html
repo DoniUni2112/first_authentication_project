@@ -1,0 +1,11 @@
+<div class="main-container">
+  <h1>Best choice on the market now</h1>
+  <div class="product-container">
+    @for (product of this.storeService.products; track $index) {
+      <app-product-card
+        [routerLink]="['/product', product.id]"
+        [product]="product"
+      ></app-product-card>
+    }
+  </div>
+</div>
