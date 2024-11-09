@@ -150,7 +150,7 @@ export class StoreService {
       product.inStock += 1; // Tăng số lượng trong kho
     }
   }
-
+  
   checkOut() {
     // Thanh toán
     // Check if the cart is empty

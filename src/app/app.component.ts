@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { AuthService } from './services/auth.service';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { StoreService } from './services/store.service';
@@ -17,6 +17,7 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
     NgFor,
     NgIf,
     ProductCartComponent,
+    RouterLink,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

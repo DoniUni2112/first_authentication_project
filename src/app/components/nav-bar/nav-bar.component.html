@@ -8,9 +8,17 @@
       <a [routerLink]="['/products']">Our roduct</a>
     </div>
     <div class="navbar-button">
-      <button class="button-27" (click)="authService.login()">
+      <button class="button-27" (click)="authService.loginWithGoogle()">
         Sign in with google
       </button>
+      <button
+        class="button-27"
+        *ngIf="!authService.currentUser"
+        [routerLink]="['/login']"
+      >
+        Login with email and password
+      </button>
+      <button class="button-27" [routerLink]="['/sign-up']">Sign-up</button>
     </div>
     <!--  <button class="button-27" (click)="authService.logout()">Đăng xuất</button>-->
   </div>
